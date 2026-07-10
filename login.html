@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Teacher Login</title>
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+<i class="fa-solid fa-school"></i>
+
+Rural Attendance
+
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link" href="index.html">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link active" href="login.html">Login</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="register.html">Register</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="attendance.html">Attendance</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="report.html">Report</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Login Form -->
+
+<div class="container">
+
+<div class="row justify-content-center mt-5">
+
+<div class="col-md-5">
+
+<div class="card shadow p-4">
+
+<h2 class="text-center text-success">
+
+Teacher Login
+
+</h2>
+
+<br>
+
+<div class="mb-3">
+
+<label>Username</label>
+
+<input
+type="text"
+id="username"
+class="form-control"
+placeholder="Enter Username">
+
+</div>
+
+<div class="mb-3">
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+class="form-control"
+placeholder="Enter Password">
+
+</div>
+
+<button 
+    type="button" 
+    class="btn btn-success w-100" 
+    onclick="login(event)">
+Login
+
+</button>
+
+<br>
+
+<div class="alert alert-info mt-3">
+
+<b>Demo Login</b>
+
+<br>
+
+Username:
+<b>admin</b>
+
+<br>
+
+Password:
+<b>admin123</b>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-success text-white text-center mt-5 p-3">
+
+© 2026 Automated Attendance System
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Attendance Management</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+<i class="fa-solid fa-school"></i>
+Rural Attendance
+</a>
+
+<div class="navbar-nav ms-auto">
+
+<a class="nav-link text-white" href="index.html">Home</a>
+
+<a class="nav-link text-white" href="register.html">Register</a>
+
+<a class="nav-link text-white active" href="attendance.html">Attendance</a>
+
+<a class="nav-link text-white" href="report.html">Reports</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Dashboard -->
+
+<div class="container mt-4">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="card text-center shadow">
+
+<div class="card-body">
+
+<h3 id="totalStudents">0</h3>
+
+<p>Total Students</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center shadow">
+
+<div class="card-body">
+
+<h3 id="presentStudents">0</h3>
+
+<p>Present</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center shadow">
+
+<div class="card-body">
+
+<h3 id="absentStudents">0</h3>
+
+<p>Absent</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card text-center shadow">
+
+<div class="card-body">
+
+<h3 id="attendancePercentage">0%</h3>
+
+<p>Attendance %</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Attendance Table -->
+
+<div class="container mt-5">
+
+<h2 class="text-success">
+
+Attendance Management
+
+</h2>
+
+<input
+type="text"
+class="form-control mb-3"
+id="search"
+placeholder="Search Student..."
+onkeyup="searchStudent()">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Name</th>
+
+<th>Roll</th>
+
+<th>Class</th>
+
+<th>Section</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentTable">
+
+</tbody>
+
+</table>
+
+<div class="mt-3">
+
+    <button class="btn btn-success" onclick="markAttendance()">
+        Save Attendance
+    </button>
+
+    <button class="btn btn-primary ms-2" onclick="markAllPresent()">
+        Mark All Present
+    </button>
+
+    <button class="btn btn-danger ms-2" onclick="markAllAbsent()">
+        Mark All Absent
+    </button>
+
+</div>
+
+</div>
+
+<footer class="bg-success text-white text-center mt-5 p-3">
+
+© 2026 Automated Attendance System
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
